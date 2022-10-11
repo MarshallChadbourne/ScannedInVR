@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571336, b: 0.3069219, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6025,10 +6025,10 @@ MonoBehaviour:
     type: 6
     baseFolder: 0
     suffix: 
-    foldout: 0
+    foldout: 1
   - platform: 2
     type: 6
-    baseFolder: 0
+    baseFolder: 3
     suffix: 
     foldout: 1
   - platform: 2
@@ -6185,8 +6185,8 @@ MonoBehaviour:
     min: 0
     max: 10
     value: 10
-    skew: 0
-    increment: 0
+    skew: 1
+    increment: 0.001
     options: []
   - type: hslider
     channel: loudness
@@ -6195,8 +6195,8 @@ MonoBehaviour:
     min: 0
     max: 80
     value: 80
-    skew: 0
-    increment: 0
+    skew: 1
+    increment: 0.001
     options: []
   - type: hslider
     channel: pitch
@@ -6205,8 +6205,8 @@ MonoBehaviour:
     min: 0
     max: 8
     value: 6.3
-    skew: 0
-    increment: 0
+    skew: 1
+    increment: 0.01
     options: []
   - type: hslider
     channel: mass
@@ -6215,8 +6215,8 @@ MonoBehaviour:
     min: 0
     max: 12
     value: 0
-    skew: 0
-    increment: 0
+    skew: 1
+    increment: 1
     options: []
   - type: hslider
     channel: displacement
@@ -6225,8 +6225,8 @@ MonoBehaviour:
     min: 0
     max: 1
     value: 0
-    skew: 0
-    increment: 0
+    skew: 1
+    increment: 0.001
     options: []
   - type: hslider
     channel: value1
@@ -6235,8 +6235,8 @@ MonoBehaviour:
     min: 0
     max: 50
     value: 7
-    skew: 0
-    increment: 0
+    skew: 1
+    increment: 0.01
     options: []
   - type: hslider
     channel: value2
@@ -6245,8 +6245,8 @@ MonoBehaviour:
     min: 0
     max: 1000
     value: 0
-    skew: 0
-    increment: 0
+    skew: 1
+    increment: 1
     options: []
   - type: hslider
     channel: value3
@@ -6255,8 +6255,8 @@ MonoBehaviour:
     min: 0
     max: 2
     value: 0
-    skew: 0
-    increment: 0
+    skew: 1
+    increment: 0.01
     options: []
   _availableAudioChannels: []
   _drawCsoundString: 0
@@ -6264,7 +6264,13 @@ MonoBehaviour:
   _drawSettings: 1
   _drawChannels: 0
   _drawAudioChannels: 0
-  _showRuntimeEnvironmentPath: 0
+  _drawPresets: 0
+  _drawPresetsLoad: 0
+  _drawPresetsSave: 0
+  _showRuntimeEnvironmentPath: 1
+  _currentPreset: 
+  _currentPresetSaveFolder: 
+  _currentPresetLoadFolder: 
 --- !u!82 &1873333735
 AudioSource:
   m_ObjectHideFlags: 0
