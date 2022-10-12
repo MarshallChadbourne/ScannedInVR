@@ -1,9 +1,9 @@
 {
-    "m_SelectedDeviceId": "1PASH9BEDE0025",
+    "m_SelectedDeviceId": "1WMHHB428U2142",
     "m_SelectedPackage": {
-        "deviceId": "1PASH9BEDE0025",
+        "deviceId": "1WMHHB428U2142",
         "name": "com.Marshall_Chadbourne.ScannedInUnity",
-        "processId": 30746,
+        "processId": 12968,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -18,6 +18,156 @@
             "deviceId": "1PASH9BEDE0025",
             "name": "com.Marshall_Chadbourne.ScannedInUnity",
             "processId": 30746,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHHB428U2142",
+            "name": "com.Marshall_Chadbourne.ScannedInUnity",
+            "processId": 29596,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHHB428U2142",
+            "name": "com.Marshall_Chadbourne.ScannedInUnity",
+            "processId": 30265,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHHB428U2142",
+            "name": "com.Marshall_Chadbourne.ScannedInUnity",
+            "processId": 30540,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHHB428U2142",
+            "name": "com.Marshall_Chadbourne.ScannedInUnity",
+            "processId": 30949,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHHB428U2142",
+            "name": "com.Marshall_Chadbourne.ScannedInUnity",
+            "processId": 31234,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHHB428U2142",
+            "name": "com.Marshall_Chadbourne.ScannedInUnity",
+            "processId": 31607,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHHB428U2142",
+            "name": "com.Marshall_Chadbourne.ScannedInUnity",
+            "processId": 32341,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHHB428U2142",
+            "name": "com.Marshall_Chadbourne.ScannedInUnity",
+            "processId": 32624,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHHB428U2142",
+            "name": "com.Marshall_Chadbourne.ScannedInUnity",
+            "processId": 1006,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHHB428U2142",
+            "name": "com.Marshall_Chadbourne.ScannedInUnity",
+            "processId": 1482,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHHB428U2142",
+            "name": "com.Marshall_Chadbourne.ScannedInUnity",
+            "processId": 2636,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHHB428U2142",
+            "name": "com.Marshall_Chadbourne.ScannedInUnity",
+            "processId": 3226,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHHB428U2142",
+            "name": "com.Marshall_Chadbourne.ScannedInUnity",
+            "processId": 3947,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHHB428U2142",
+            "name": "com.Marshall_Chadbourne.ScannedInUnity",
+            "processId": 5416,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHHB428U2142",
+            "name": "com.Marshall_Chadbourne.ScannedInUnity",
+            "processId": 6326,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHHB428U2142",
+            "name": "com.Marshall_Chadbourne.ScannedInUnity",
+            "processId": 6805,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHHB428U2142",
+            "name": "com.Marshall_Chadbourne.ScannedInUnity",
+            "processId": 7266,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHHB428U2142",
+            "name": "com.Marshall_Chadbourne.ScannedInUnity",
+            "processId": 8243,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHHB428U2142",
+            "name": "com.Marshall_Chadbourne.ScannedInUnity",
+            "processId": 8666,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHHB428U2142",
+            "name": "com.Marshall_Chadbourne.ScannedInUnity",
+            "processId": 8974,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHHB428U2142",
+            "name": "com.Marshall_Chadbourne.ScannedInUnity",
+            "processId": 11048,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHHB428U2142",
+            "name": "com.Marshall_Chadbourne.ScannedInUnity",
+            "processId": 11909,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHHB428U2142",
+            "name": "com.Marshall_Chadbourne.ScannedInUnity",
+            "processId": 12283,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHHB428U2142",
+            "name": "com.Marshall_Chadbourne.ScannedInUnity",
+            "processId": 12605,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHHB428U2142",
+            "name": "com.Marshall_Chadbourne.ScannedInUnity",
+            "processId": 12968,
             "exited": false
         }
     ],
@@ -72,7 +222,7 @@
         "Behavior": 0
     },
     "m_FilterOptions": {
-        "m_Filter": "load",
+        "m_Filter": "",
         "m_UseRegularExpressions": false,
         "m_MatchCase": false
     },

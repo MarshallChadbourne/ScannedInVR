@@ -299,27 +299,21 @@ f7 0 128 -7 .01 128 128
 
 ;====Initialize Instruments
 i1 0 [60*60*24*7]
+i2 0 [60*60*24*7]
+i3 0 [60*60*24*7]
+i98 0 [60*60*24*7]
+i99 0 [60*60*24*7]
 i3 0 [60*60*24*7]
 i 98 0 [3600*24*7]
 i 99 0 [3600*24*7]
 e
 </CsScore>
 </CsoundSynthesizer>
-<bsbPanel>
- <label>Widgets</label>
- <objectName/>
- <x>100</x>
- <y>100</y>
- <width>320</width>
- <height>240</height>
- <visible>true</visible>
- <uuid/>
- <bgcolor mode="background">
-  <r>240</r>
-  <g>240</g>
-  <b>240</b>
- </bgcolor>
-</bsbPanel>
+
+
+
+
+
 <bsbPresets>
 </bsbPresets>
 <bsbPanel>

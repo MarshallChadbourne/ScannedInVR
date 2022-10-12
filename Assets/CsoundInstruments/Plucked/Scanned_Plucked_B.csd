@@ -90,11 +90,13 @@ f7 0 128 -5 .001 128 128
 ;run csound forever
 i1 0 [60*60*24*7] 
 
-
+i2 0 10 80 6.00
 
 
 </CsScore>
 </CsoundSynthesizer>
+
+
 
 
 

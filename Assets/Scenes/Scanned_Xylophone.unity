@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571336, b: 0.3069219, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -297,7 +297,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0.5, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: 3.333334, y: 0.49999955, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 2
@@ -393,7 +393,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0.5, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: -3.3333335, y: 0.49999955, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 2
@@ -631,7 +631,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0.5, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: -3.7692308, y: 0.46153796, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 2
@@ -727,7 +727,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0.5, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: 3.3333344, y: 0.49999955, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 2
@@ -1097,6 +1097,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cricket_Bat_Blue
       objectReference: {fileID: 0}
+    - target: {fileID: 3810172710843480761, guid: 7a54361820b3f824fb39245cfe88d864,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4587940175711444995, guid: 7a54361820b3f824fb39245cfe88d864,
         type: 3}
       propertyPath: m_RootOrder
@@ -1432,7 +1437,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0.5, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: 3.3666663, y: 0.49999955, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 2
@@ -1528,7 +1533,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0.5, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: 3.3666663, y: 0.49999955, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 2
@@ -2131,8 +2136,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90b3edc3234b844679d0a4af8accb80f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _pluginsNamesNames:
-  - scansyn
+  _pluginsNamesNames: []
   _additionalFiles:
   - Directory: 
     FileName: string-128
@@ -2433,7 +2437,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0.5, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: 3.3333337, y: 0.49999955, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 2
@@ -2529,7 +2533,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0.5, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: -3.3333337, y: 0.49999955, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 2
@@ -3545,7 +3549,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0.5, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: 3.3333335, y: 0.49999955, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 2
@@ -3641,7 +3645,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0.5, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: -3.333334, y: 0.49999955, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 2
@@ -3879,7 +3883,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0.5, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: -3.3333344, y: 0.49999955, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 2
@@ -3975,7 +3979,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0.5, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: 3.3000004, y: 0.49999955, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 2
@@ -4213,7 +4217,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0.5, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: 3.3333337, y: 0.49999955, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 2
@@ -4309,7 +4313,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0.5, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: -3.333334, y: 0.49999955, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 2
@@ -4661,7 +4665,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0.5, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: 3.3333335, y: 0.49999955, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 2
@@ -4757,7 +4761,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0.5, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: -3.3333335, y: 0.49999955, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 2
@@ -5413,7 +5417,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0.5, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: 4.384616, y: 0.46153796, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 2
@@ -5509,7 +5513,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0.5, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: -3.3333323, y: 0.49999955, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 2
@@ -5747,7 +5751,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0.5, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: 3.3333337, y: 0.49999955, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 2
@@ -5843,7 +5847,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0.5, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: -3.3333337, y: 0.49999955, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 2
@@ -5951,6 +5955,106 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 079fe01a068a043aa961a1c6442ee5e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &1836064470
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7501764383352114883, guid: 4886e356cfaaf44ca88bd49936568982,
+        type: 3}
+      propertyPath: m_Drag
+      value: 1.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501764383352114887, guid: 4886e356cfaaf44ca88bd49936568982,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501764383352114887, guid: 4886e356cfaaf44ca88bd49936568982,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.74
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501764383352114887, guid: 4886e356cfaaf44ca88bd49936568982,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.74
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501764383352114887, guid: 4886e356cfaaf44ca88bd49936568982,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.74
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501764383352114887, guid: 4886e356cfaaf44ca88bd49936568982,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501764383352114887, guid: 4886e356cfaaf44ca88bd49936568982,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501764383352114887, guid: 4886e356cfaaf44ca88bd49936568982,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501764383352114887, guid: 4886e356cfaaf44ca88bd49936568982,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501764383352114887, guid: 4886e356cfaaf44ca88bd49936568982,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501764383352114887, guid: 4886e356cfaaf44ca88bd49936568982,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501764383352114887, guid: 4886e356cfaaf44ca88bd49936568982,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501764383352114887, guid: 4886e356cfaaf44ca88bd49936568982,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501764383352114887, guid: 4886e356cfaaf44ca88bd49936568982,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501764383352114887, guid: 4886e356cfaaf44ca88bd49936568982,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501764383352114887, guid: 4886e356cfaaf44ca88bd49936568982,
+        type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501764383352114893, guid: 4886e356cfaaf44ca88bd49936568982,
+        type: 3}
+      propertyPath: m_Name
+      value: Ball
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501764383352114893, guid: 4886e356cfaaf44ca88bd49936568982,
+        type: 3}
+      propertyPath: m_TagString
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 2647094032062505361, guid: 4886e356cfaaf44ca88bd49936568982, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 4886e356cfaaf44ca88bd49936568982, type: 3}
 --- !u!1 &1873333732
 GameObject:
   m_ObjectHideFlags: 0
@@ -6004,12 +6108,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1873333732}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d20258c641c94f0ea3dc32cfe3de904, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  logCsoundOutput: 0
+  logCsoundOutput: 1
   mute: 0
   processClipAudio: 0
   loudVolumeWarning: 1
@@ -6025,7 +6129,7 @@ MonoBehaviour:
     type: 6
     baseFolder: 0
     suffix: 
-    foldout: 1
+    foldout: 0
   - platform: 2
     type: 6
     baseFolder: 3
@@ -6036,127 +6140,38 @@ MonoBehaviour:
     baseFolder: 0
     suffix: 
     foldout: 1
-  _csoundFileGUID: 7e351b9587a764e0b8f2516b33aaee67
-  _csoundString: "<Cabbage>\r\nform caption(\"Xylophone\") size(1200, 500), guiMode(\"queue\")
-    pluginId(\"def1\")\r\nbutton bounds(30, 22, 80, 40) channel(\"trigger\")\r\n;===CABBAGE/TESTING
-    CHANNELS===;\r\nhslider bounds(32, 76, 150, 49) channel(\"duration\") range(0,
-    10, 10, 1, 0.001) , \r\nhslider bounds(32, 142, 150, 50) channel(\"loudness\")
-    range(0, 80, 80, 1, 0.001)\r\nhslider bounds(32, 208, 150, 50) channel(\"pitch\")
-    range(0, 8, 6.3, 1, 0.01)\r\n\r\n;===UNITY CHANNELS===;\r\nhslider bounds(212,
-    76, 150, 50) channel(\"mass\") range(0, 12, 0, 1, 1) text(\"mass\")\r\nhslider
-    bounds(214, 146, 150, 50) channel(\"displacement\") range(0, 1, 0, 1, 0.001)
-    text(\"dis\")\r\n\r\nhslider bounds(736, 24, 150, 28) channel(\"value1\") range(0,
-    50, 7, 1, 0.01) text(\"Value 1\")\r\nhslider bounds(734, 54, 150, 30) channel(\"value2\")
-    range(0, 1000, 0, 1, 1) text(\"Value 2\")\r\nhslider bounds(736, 86, 150, 31)
-    channel(\"value3\") range(0, 2, 0, 1, 0.01) text(\"Value 3\")\r\n</Cabbage>\r\n<CsoundSynthesizer>s\r\n<CsOptions>\r\n-n
-    --displays -+rtmidi=NULL -M0 --limiter=.9  ; --midi-key-cps=5 --midi-velocity-amp=4\r\n</CsOptions>\r\n<CsInstruments>\r\n;INSTRUMENT
-    1 = TRIGGER/SEND \r\n;INSTRUMENT 2 = SCANNED \r\n;INSTRUMENT 3 = HARMONIC/ATTACK
-    \r\n;INSTRUMENT 4 = DISPLAYS\r\nsr = 48000\r\nksmps = 32\r\nnchnls = 2\r\n0dbfs=1\r\nmassign
-    0, 3\r\n\r\nkPortTime       linseg    0,0.01,0.1\r\n\r\ngaScanSend      init   
-    0\r\ngaDisplaySend   init    0\r\ngaSendM         init    0\r\ngaSendL        
-    init    0\r\ngaSendR         init    0\r\n\r\n\r\n;Tables\r\n    giImp      
-    ftgen    0,0,4097,9,0.5,1,0\r\n    gidetuning  ftgen    0,0,128,21,1,1\r\n   
-    giDryMap    ftgen    0,0,4096,7,1,2048,1,2048,0   \r\n    giWetMap    ftgen   
-    0,0,4096,7,0,2048,1,2048,1\r\n;Amplitude \r\n    gkAmpVel    init .5\r\n    gkAmp      
-    init .3\r\n    gkNumOffset init 20.34\r\n    gkNumRange  init 15\r\n    gkNumOffset
-    portk    gkNumOffset,kPortTime\r\n\r\n;Detune\r\n    gkdetune init 0\r\n\r\n;Release
-    Hammer:\r\n    gkRelHammAmp init 0.1\r\n    gkRelHammFrq init 200\r\n    gkRelHammTrk
-    init 0.3\r\n\r\n;Harmonic\r\n    gkHarmRange init 0.64\r\n    gkHarmKybd init
-    0.00\r\n    gkHarmOffset init 0.00\r\n    ;   gliss\r\n    gkHarmSlideDep init
-    0.00\r\n    gkHarmSlideRate init .10\r\n;Strings\r\n    gkcutoff init 1.00\r\n   
-    gkfeedback init .99\r\n    gkrelease init 4.00\r\n;Impulse \r\n    gkHammFrq
-    init 100\r\n    gkHammTrk init 0.33\r\n    gkToneVel init .750\r\n;Stereo\r\n   
-    gkStWidth init 0.01\r\n    gkStMix   init .5\r\n    gkDryWet  init 0.300\r\n;Reverb\r\n   
-    gkRvbEQ init 0.3\r\n    gkRvbSize init 0.55\r\n    \r\n\r\nopcode    Oscil1a,a,iii                   
-    \r\n iamp,ifrq,ifn    xin\r\n aptr    line    0,1/ifrq,1\r\n asig    tablei   
-    aptr,ifn,1\r\n aenv    linseg    1,1/ifrq,1,0.001,0\r\n    xout    asig*iamp*aenv\r\nendop\r\n\r\n\r\ninstr
-    1         ;channel and trigger instrumnent \r\n\r\n\tgkDry     table gkDryWet,giDryMap,1\r\n   
-    gkWet     table gkDryWet,giWetMap,1 \r\n    \r\n    kTrig  chnget \"trigger\"\r\n   
-    kDur   chnget \"duration\"\r\n    kAmp   chnget \"loudness\"\r\n    kPitch chnget
-    \"pitch\"\r\n\r\n    if changed(kTrig) == 1 then\r\n        event \"i\", 2, 0,
-    10, -25, 6.06\r\n        ;i \"scan\" 0 3 -14 6.00\r\n    endif\r\nendin\r\n\r\ninstr
-    3         ;Audio Signal Instrument (Harmonics)\r\n\r\n    ;===Midi\r\n    inum   
-    notnum\r\n    kcps        =    cpsmidinn(((inum/127) * gkNumRange) + gkNumOffset)\r\n   
-    \r\n    ;===Hammer Release\r\n    ;krel    release\r\n    krel    init    0\r\n   
-    krms    init    0\r\n    ktrig    trigger    krel,0.5,0\r\n    if ktrig==1 then\r\n       
-    reinit RELEASE_HAMMER\r\n    endif\r\n    \r\n    RELEASE_HAMMER:\r\n    \r\n       
-    if i(krel)==1 then                            ; Insert release hammer values\r\n           
-    iAmpVel    =        i(gkRelHammAmp) * (( i(krms) * 3) + 0.03)\r\n           
-    ifrq        =        i(gkRelHammFrq) * semitone(i(gkRelHammTrk)*inum)\r\n       
-    else\r\n            ifrq        =        i(gkHammFrq) * semitone(i(gkHammTrk)*inum)\r\n           
-    iAmpVel    veloc    1-i(gkAmpVel),1\r\n        endif\r\n\r\n\r\n        ;====Detuning\r\n       
-    idetune    table    70,gidetuning\r\n        kdetune    =    idetune * gkdetune\r\n   
-    \r\n    \r\n        kPortTime    linseg    0,0.01,0.1\r\n        gkNumOffset   
-    portk    gkNumOffset,kPortTime\r\n\r\n    \r\n        ;===Impulse\r\n       
-    aImpls    Oscil1a iAmpVel, ifrq, giImp ;impulse of harmonics\r\n\r\n    rireturn\r\n\r\n   
-    icf    veloc    12-(8*i(gkToneVel)),12\r\n    aImpls    butlp    aImpls,cpsoct(icf)\r\n\r\n   
-    \r\n     ;==Harmonic==\r\n    iHarmVel    veloc    i(gkHarmRange),0\r\n    iHarmKybd   
-    =        (i(gkHarmKybd) * (128-inum))/128\r\n    iHarmRatio    =        1 + i(gkHarmOffset)
-    + iHarmVel + iHarmKybd\r\n    kHarmRatio    =        1 + gkHarmOffset + iHarmVel
-    + iHarmKybd\r\n    kHarmRatio    init    iHarmRatio\r\n    aHarmRatio    =       
-    a(kHarmRatio)\r\n \r\n    ;=====WaveGuide Frequencies\r\n      \r\n    aFund1     
-    interp   kcps * cent(kdetune), 0, 1\r\n    aFund2      interp   kcps * cent(-kdetune),
-    0, 1\r\n    \r\n    aHarmRatio    interp    kHarmRatio, 0, 1\r\n    \r\n    
-    if gkHarmSlideDep>0 then\r\n        aMod        rspline    -gkHarmSlideDep,gkHarmSlideDep,gkHarmSlideRate,gkHarmSlideRate*2\r\n       
-    aHarmRatio    =        aHarmRatio * semitone(aMod)\r\n    endif\r\n    \r\n   
-    aHarm1      =   aFund1 * aHarmRatio\r\n    aHarm2      =   aFund2 * aHarmRatio\r\n   
-    \r\n    kcutoff = 5000\r\n    kfeedback = 2.499999 \r\n  \r\n    ;====WaveGuide
-    Filters\r\n    kcutoff    =        (sr/2)*gkcutoff\r\n    kfeedback    =       
-    0.249999999*gkfeedback\r\n    aWg2        wguide2    aImpls,aFund1, aHarm1, kcutoff,kcutoff,
-    kfeedback, kfeedback\r\n    aWg2_2        wguide2    aImpls,aFund2, aHarm2, kcutoff,kcutoff,
-    kfeedback, kfeedback\r\n        \r\n    aWg2    dcblock2    aWg2+aWg2_2\r\n   
-    icps    cpsmidi\r\n    aWg2    butbr    aWg2, icps, icps*0.1\r\n    krms    rms     
-    aWg2\r\n        \r\n        \r\n    ;=====Release\r\n    irel    =        i(gkrelease)\r\n   
-    kCF    expsegr        sr/3,irel,20\r\n    aEnv    expsegr        1,irel,0.01\r\n   
-    aWg2    tone        aWg2, kCF\r\n    aWg2    =        aWg2 * aEnv  \r\n    \r\n   
-    iScanSendAmt    =   2.0\r\n    aScanSend      =   gaScanSend + (aWg2 * iScanSendAmt)\r\n   
-    gaSendM = gaSendM + aWg2\r\nendin\r\n\r\n\r\ninstr 2         ;SCANNED instrument
-    \r\n    a0 init 0\r\n    \r\n    kMass chnget \"mass\"\r\n    kDisplace chnget
-    \"displacement\"\r\n    \r\n    kcentend chnget \"value1\"\r\n    kcentr   linseg
-    1, 1, 10, 1, 6, 2, 2\r\n    kpos    linseg    0, 3, 1\r\n\r\n    irate = .025\r\n   
-    \r\n          ;init, irate, ifndisplace, ifnmass, ifnmatrix, ifncentr, ifndamp,    
-    kmass,  kmtrxstiff, kcentr,      kdamp,       ileft,        iright,    kpos,     
-    kdisplace,    ain,    idisp,  id \r\n        \r\n    scanu2 1,   irate,  6,             
-    2,      3,          4,      5,          30,       60,       kcentr,       .5,          
-    .2,            .7,      kpos,       kDisplace,    gaScanSend, 1,  2\r\n    \r\n   
-    a1 scans ampdbfs(p4), cpspch(p5), 7, 2, 4\r\n    a1 dcblock a1\r\n    ;===Enevelope===\r\n   
-    kHPenv  expseg  1, 4, 100, 6, 15000\r\n    a1      buthp   a1, kHPenv\r\n   
-    \r\n    ;===Filters===\r\n    a1  atonex  a1, 25\r\n    a1  tonex   a1, 6700,
-    2\r\n    a1  butlp   a1, 10000\r\n\r\n   ; a1  eqfil   a1, kCOch, kbw, kgain,
-    1\r\n    ;===Outputs===\r\n    iWet = .5\r\n    iDry = .5\r\n    gaSendM = gaSendM
-    + (a1 * iWet)\r\n    outs a1 * iDry, a1 * iDry\r\n    clear gaScanSend\r\nendin\r\n\r\ninstr   
-    98    ; spatialising short delays\r\n\r\n    iDelTimL    random    0.00001,i(gkStWidth)\r\n   
-    aDelSigL    delay    gaSendM, iDelTimL\r\n    iDelTimR    random    0.00001,i(gkStWidth)\r\n   
-    aDelSigR    delay    gaSendM, iDelTimR\r\n    kDry        table    gkStMix,giDryMap,1\r\n   
-    kWet        table    gkStMix,giWetMap,1\r\n    aL        =    ((gaSendM*kDry)+(aDelSigL*kWet))
-    * gkDry\r\n    aR        =    ((gaSendM*kDry)+(aDelSigR*kWet)) * gkDry\r\n   
-    gaSendL    =    gaSendL + gaSendM + aDelSigL\r\n    gaSendR    =    gaSendR +
-    gaSendM + aDelSigR\r\n            outs    aL*gkAmp, aR*gkAmp\r\n            clear   
-    gaSendM\r\nendin\r\n\r\ninstr    99\r\n    kRvbLPF    limit    cpsoct(4+(gkRvbEQ*2*10)),20,sr/2   
-    \r\n    aL,aR    reverbsc    gaSendL,gaSendR,gkRvbSize,kRvbLPF\r\n        outs       
-    aL*gkWet*gkAmp,aR*gkWet*gkAmp\r\n        clear        gaSendL,gaSendR\r\nendin\r\n\r\n</CsInstruments>\r\n<CsScore>\r\n;causes
-    Csound to run for about 7000 years...\r\nf0 z\r\n\r\n; Initial displacement condition\r\n;f1
-    0 128 -7 0 64 1 64 0 ; ramp\r\n;f1 0 128 10 1\r\n;f1 0 128 -7 0 28 0 11 1 11
-    0 78 0 ; a pluck that is 10 points wide on the surface\r\nf1 0 128 -7 0 56 0
-    8 1 8 0 56 0 ;A CENTERED PLUCK! IT SOUNDS GREAT \r\n; Masses\r\nf2 0 128 -7 .8
-    128 .5\r\n\r\n; Spring satrices\r\nf3 0 16384 -23 \"string-128.matrxB\"\r\n;  
-    .MATRX T\r\n;f3 0 0 -44 \"128,8-cylinder.XmatrxT\"\r\n\r\n; Centering force 
-    \r\n;f4 0 128 -7 .12 128 .5 ; \r\nf4 0 128 -11 2 .2 -.2\r\n\r\n; Damping\r\nf5
-    0 128 -7 1 128 .3\r\n; Initial velocity - (displacement, vel, and acceleration\r\n;
-    Acceleration is from stiffness matrix pos effect - increases acceleration\r\n;UN-UNIFORM
-    TABlE: f% 0 128 9 1 .4 0 2.2 .5 0 3.8 1 0\r\n;f6 0 128 9 1 .4 0 2.2 .5 0 3.8
-    1 0\r\n\r\n;f6 0 128 -7 .03 128 .03; uniform initial velocity\r\nf6 0 128 -11
-    1 1.5 -.2 ;same GEN11 as centering force\r\n;f6 0 128 10 \r\n; Trajectories\r\nf7
-    0 128 -7 .01 128 128\r\n\r\n\r\n;====Initialize Instruments\r\ni1 0 [60*60*24*7]\r\ni3
-    0 [60*60*24*7]\r\ni 98 0 [3600*24*7]\r\ni 99 0 [3600*24*7]\r\ne\r\n</CsScore>\r\n</CsoundSynthesizer>\r\n<bsbPanel>\r\n
-    <label>Widgets</label>\r\n <objectName/>\r\n <x>100</x>\r\n <y>100</y>\r\n <width>320</width>\r\n
-    <height>240</height>\r\n <visible>true</visible>\r\n <uuid/>\r\n <bgcolor mode=\"background\">\r\n 
-    <r>240</r>\r\n  <g>240</g>\r\n  <b>240</b>\r\n </bgcolor>\r\n</bsbPanel>\r\n<bsbPresets>\r\n</bsbPresets>\r\n<bsbPanel>\r\n
-    <label>Widgets</label>\r\n <objectName/>\r\n <x>100</x>\r\n <y>100</y>\r\n <width>320</width>\r\n
-    <height>240</height>\r\n <visible>true</visible>\r\n <uuid/>\r\n <bgcolor mode=\"background\">\r\n 
-    <r>240</r>\r\n  <g>240</g>\r\n  <b>240</b>\r\n </bgcolor>\r\n</bsbPanel>\r\n<bsbPresets>\r\n</bsbPresets>\r\n"
-  _csoundFileName: Scanned_Xylophone.csd
-  _csoundAsset: {fileID: 102900000, guid: 7e351b9587a764e0b8f2516b33aaee67, type: 3}
+  _csoundFileGUID: 69046e40b6faf4de39c8bb3c545a4fab
+  _csoundString: "<Cabbage>\nform caption(\"Plucked-Scan\") size(400, 300), guiMode(\"queue\")
+    pluginId(\"def1\")\nbutton bounds(30, 22, 80, 40) channel(\"trigger\")\nhslider
+    bounds(32, 76, 150, 49) channel(\"paramone\") range(0, 20, 10, 1, 0.1) text(\"param1\"),
+    \nhslider bounds(32, 142, 150, 50) channel(\"paramtwo\") range(0, 100, 80, 1,
+    1) text(\"param2\"), \nhslider bounds(32, 208, 150, 50) channel(\"pitch\") range(,
+    8, 6, 1, 0.05) text(\"pitch\"), \n\n</Cabbage>\n<CsoundSynthesizer>\n<CsOptions>\n-n
+    -d\n</CsOptions>\n<CsInstruments>\n\nsr = 48000\nksmps = 16\nnchnls = 2\n;0dbfs
+    = 1\n\ninstr 1\n    \n    kTrig  chnget \"trigger\"\n    \n    kPitch chnget
+    \"pitch\"\n    \n    if changed(kTrig) == 1 then\n        event \"i\", 2, 0,
+    10, 80, kPitch\n    endif\n    \nendin\n    \n\tinstr 2\n\nkParamOne chnget \"paramone\"\nkParamTwo  
+    chnget \"paramtwo\"\n    \na0 = 0\nirate = .0005\nkmass\t\t\t\t= 4\nkmtrxstiff\t\t=
+    .4\nkcentr\t\t\t\t= .04\nkdamp\t\t\t\t= -.01\nileft\t\t\t\t= .5\niright\t\t\t\t=
+    .5\nkpos\t\t\t\t= .2\nkdisplace\t\t\t= 0\nain\t\t\t\t\t= a0\n\n;scanu \tinit,
+    irate, ifndisp,\tifnmass, ifnmatrx, ifncentr, ifndamp, kmass, kmtrxstiff, kcentr,
+    kdamp, ileft, iright, kpos, kdisplace, ain, idisp, id \n\nscanu \t\t1, irate,\t\t6,
+    \t\t\t2, \t\t\t3, \t\t\t4, \t\t\t5,\t\t kmass,\t\t \tkmtrxstiff,\tkcentr, kdamp,
+    \tileft, iright, kpos, kdisplace, ain, \t1, \t\t2\n\nkbentpitch linseg 20, 1,
+    40, .5, 100, .2, 20\n\nkpitchlfo oscil 2.9, 4\n\na1  scans ampdb(p4), kbentpitch
+    + kpitchlfo, 7,       2\n\t\t\t\t\touts a1, a1\n\t\t\t\t\tendin\n</CsInstruments>\n<CsScore>\n;causes
+    csound to run for 7000 years\nf0 z\n; Initial condition\nf1 0 128 -7 0 64 .5\n  
+    \n; Masses\nf2 0 128 -7 0.1 128 .9\n   \n; Spring matrices\nf3 0 16384 -23 \"string-128.matrxB\"\n  
+    \n; Centering force\nf4  0 128 -7 1 128 3\n   \n; Damping\nf5 0 128 -7 1 96 2
+    32 1\n   \n; Initial velocity\nf6 0 128 -10 .5\n   \n; Trajectories\nf7 0 128
+    -5 .001 128 128\n\n;score\n;example hit:\n;   strt    dur         db      pitch\n;i1
+    0       10          80      6.00\n\n;run csound forever\ni1 0 [60*60*24*7] \n\ni2
+    0 10 80 6.00\n\n\n</CsScore>\n</CsoundSynthesizer>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<bsbPanel>\n
+    <label>Widgets</label>\n <objectName/>\n <x>100</x>\n <y>100</y>\n <width>320</width>\n
+    <height>240</height>\n <visible>true</visible>\n <uuid/>\n <bgcolor mode=\"background\">\n 
+    <r>240</r>\n  <g>240</g>\n  <b>240</b>\n </bgcolor>\n</bsbPanel>\n<bsbPresets>\n</bsbPresets>\n"
+  _csoundFileName: Scanned_Plucked_B.csd
+  _csoundAsset: {fileID: 102900000, guid: 69046e40b6faf4de39c8bb3c545a4fab, type: 3}
   _channels:
   - type: form
     channel: 
@@ -6556,7 +6571,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0.5, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: 3.333334, y: 0.49999955, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 2
@@ -6652,7 +6667,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0.5, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: -3.3666663, y: 0.49999955, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 2
@@ -6890,7 +6905,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0.5, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: 3.3333335, y: 0.49999955, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 2
@@ -6986,7 +7001,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0.5, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: -3.3333342, y: 0.49999955, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 2
