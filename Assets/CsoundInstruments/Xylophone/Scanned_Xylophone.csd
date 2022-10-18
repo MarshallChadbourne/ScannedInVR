@@ -1,6 +1,7 @@
 <Cabbage>
 form caption("Xylophone") size(1200, 500), guiMode("queue") pluginId("def1")
 button bounds(30, 22, 80, 40) channel("trigger")
+button bounds(240, 22, 80, 40) channel("triggertwo")
 ;===CABBAGE/TESTING CHANNELS===;
 hslider bounds(32, 76, 150, 49) channel("duration") range(0, 10, 10, 1, 0.001) , 
 hslider bounds(32, 142, 150, 50) channel("loudness") range(0, 80, 80, 1, 0.001)
@@ -8,15 +9,16 @@ hslider bounds(32, 208, 150, 50) channel("pitch") range(0, 8, 6.3, 1, 0.01)
 
 ;===UNITY CHANNELS===;
 hslider bounds(212, 76, 150, 50) channel("mass") range(0, 12, 0, 1, 1) text("mass")
-hslider bounds(214, 146, 150, 50) channel("displacement") range(0, 1, 0, 1, 0.001) text("dis")
+hslider bounds(214, 146, 150, 50) channel("displacement") range(0, 1, 0.001, 1, 0.001) text("dis")
 
-hslider bounds(736, 24, 150, 28) channel("value1") range(0, 50, 7, 1, 0.01) text("Value 1")
+hslider bounds(736, 24, 150, 28) channel("value1") range(0.1, 10, 0.674, 1, 0.001) text("Value 1")
 hslider bounds(734, 54, 150, 30) channel("value2") range(0, 1000, 0, 1, 1) text("Value 2")
 hslider bounds(736, 86, 150, 31) channel("value3") range(0, 2, 0, 1, 0.01) text("Value 3")
+nslider bounds(220, 234, 100, 22) channel("barnum") range(1, 12, 0, 1, 1)
 </Cabbage>
 <CsoundSynthesizer>s
 <CsOptions>
--n --displays -+rtmidi=NULL -M0 --limiter=.9  ; --midi-key-cps=5 --midi-velocity-amp=4
+-dm0 -n   --limiter=.9   ;-+rtmidi=NULL -M0  ;--midi-key-cps=5 --midi-velocity-amp=4 -B512 -b128
 </CsOptions>
 <CsInstruments>
 ;INSTRUMENT 1 = TRIGGER/SEND 
@@ -27,7 +29,7 @@ sr = 48000
 ksmps = 32
 nchnls = 2
 0dbfs=1
-massign 0, 3
+;massign 0, 3
 
 kPortTime       linseg    0,0.01,0.1
 
@@ -67,8 +69,8 @@ gaSendR         init    0
     gkHarmSlideRate init .10
 ;Strings
     gkcutoff init 1.00
-    gkfeedback init .99
-    gkrelease init 4.00
+    gkfeedback init .984
+    gkrelease init 3.00
 ;Impulse 
     gkHammFrq init 100
     gkHammTrk init 0.33
@@ -102,7 +104,7 @@ instr 1         ;channel and trigger instrumnent
     kPitch chnget "pitch"
 
     if changed(kTrig) == 1 then
-        event "i", 2, 0, 10, -25, 6.06
+        event "i", 2, 0, 15, -30, 6.06
         ;i "scan" 0 3 -14 6.00
     endif
 endin
@@ -110,26 +112,34 @@ endin
 instr 3         ;Audio Signal Instrument (Harmonics)
 
     ;===Midi
-    inum    notnum
-    kcps        =    cpsmidinn(((inum/127) * gkNumRange) + gkNumOffset)
+    ;Midi note input range 24 - 84
+    ;inum    notnum 
     
+    inum    random 19+(p4 * 5), 24+(p4 * 5)
+    ;kcps        =    cpsmidinn(((inum/127) * gkNumRange) + gkNumOffset)
+    kcps    	=	mtof(((inum/127) * gkNumRange) + gkNumOffset)
+    ktest = (((inum/127) * gkNumRange) + gkNumOffset)
     ;===Hammer Release
-    ;krel    release
+    kreltrig    linseg 0, .5, .6
+    kreltrig    init    0
     krel    init    0
     krms    init    0
-    ktrig    trigger    krel,0.5,0
+    ktrig    trigger    kreltrig,0.5,0
     if ktrig==1 then
+        krel = 1
         reinit RELEASE_HAMMER
     endif
     
     RELEASE_HAMMER:
-    
+        
         if i(krel)==1 then                            ; Insert release hammer values
             iAmpVel    =        i(gkRelHammAmp) * (( i(krms) * 3) + 0.03)
             ifrq        =        i(gkRelHammFrq) * semitone(i(gkRelHammTrk)*inum)
         else
             ifrq        =        i(gkHammFrq) * semitone(i(gkHammTrk)*inum)
-            iAmpVel    veloc    1-i(gkAmpVel),1
+            ;iAmpVel    veloc    1-i(gkAmpVel),1
+            iAmpVel     =		p5/127
+            ;printk .3, kAmpVel
         endif
 
 
@@ -146,13 +156,17 @@ instr 3         ;Audio Signal Instrument (Harmonics)
         aImpls    Oscil1a iAmpVel, ifrq, giImp ;impulse of harmonics
 
     rireturn
-
-    icf    veloc    12-(8*i(gkToneVel)),12
+    
+    icf     =			(((p5 - 1) * 6) / 126) + 6 
+    ;icf    veloc    12-(8*i(gkToneVel)),12
+    
+    
     aImpls    butlp    aImpls,cpsoct(icf)
 
     
      ;==Harmonic==
-    iHarmVel    veloc    i(gkHarmRange),0
+    ;iHarmVel    veloc    i(gkHarmRange),0
+    iHarmVel		=			(p5-1) * (0 - i(gkHarmRange)) / (126) + i(gkHarmRange)	
     iHarmKybd    =        (i(gkHarmKybd) * (128-inum))/128
     iHarmRatio    =        1 + i(gkHarmOffset) + iHarmVel + iHarmKybd
     kHarmRatio    =        1 + gkHarmOffset + iHarmVel + iHarmKybd
@@ -184,7 +198,9 @@ instr 3         ;Audio Signal Instrument (Harmonics)
     aWg2_2        wguide2    aImpls,aFund2, aHarm2, kcutoff,kcutoff, kfeedback, kfeedback
         
     aWg2    dcblock2    aWg2+aWg2_2
-    icps    cpsmidi
+    ;icps    cpsmidi
+    icps    =       p4
+    print icps
     aWg2    butbr    aWg2, icps, icps*0.1
     krms    rms      aWg2
         
@@ -197,33 +213,41 @@ instr 3         ;Audio Signal Instrument (Harmonics)
     aWg2    =        aWg2 * aEnv  
     
     iScanSendAmt    =   2.0
-    aScanSend      =   gaScanSend + (aWg2 * iScanSendAmt)
+    gaScanSend      =   gaScanSend + (aWg2 * iScanSendAmt)
     gaSendM = gaSendM + aWg2
 endin
 
 
 instr 2         ;SCANNED instrument 
-    a0 init 0
     
     kMass chnget "mass"
     kDisplace chnget "displacement"
-    
-    kcentend chnget "value1"
-    kcentr   linseg 1, 1, 10, 1, 6, 2, 2
-    kpos    linseg    0, 3, 1
+    kTrigtwo  chnget  "triggertwo"
 
+    kdamp init .7
+    ;Centering Env
+    kcentr   linseg 1, .4, 5, 2, 4, 2, 1.3
+    
+    if changed(kTrigtwo) == 1 then
+        kdamp   linseg .7, .01, 10, .3, .7
+    endif
+    
+    
+    kpos    linseg    0, 3,    0.1
+    
+    ;Amp Env
+    kenvm   linseg 0.00, 0.01, 1, 5, 0.5, 3, .4, 2, .3, 2, .1, 1, 0  
+    kenvm2  linseg 1, p3, 0
+    
     irate = .025
     
           ;init, irate, ifndisplace, ifnmass, ifnmatrix, ifncentr, ifndamp,     kmass,  kmtrxstiff, kcentr,      kdamp,       ileft,        iright,    kpos,      kdisplace,    ain,    idisp,  id 
         
-    scanu2 1,   irate,  6,              2,      3,          4,      5,          30,       60,       kcentr,       .5,           .2,            .7,      kpos,       kDisplace,    gaScanSend, 1,  2
+    scanu2 1,   irate,  6,              2,      3,          4,      5,          25,       20,       kcentr,       kdamp,           .2,            .7,      kpos,       kDisplace,    gaScanSend, 0,  2
     
-    a1 scans ampdbfs(p4), cpspch(p5), 7, 2, 4
+    a1 scans (ampdbfs(p4)) * kenvm * kenvm2, cpspch(p5), 7, 2, 4
     a1 dcblock a1
-    ;===Enevelope===
-    kHPenv  expseg  1, 4, 100, 6, 15000
-    a1      buthp   a1, kHPenv
-    
+        
     ;===Filters===
     a1  atonex  a1, 25
     a1  tonex   a1, 6700, 2
@@ -288,10 +312,10 @@ f5 0 128 -7 1 128 .3
 ; Initial velocity - (displacement, vel, and acceleration
 ; Acceleration is from stiffness matrix pos effect - increases acceleration
 ;UN-UNIFORM TABlE: f% 0 128 9 1 .4 0 2.2 .5 0 3.8 1 0
-;f6 0 128 9 1 .4 0 2.2 .5 0 3.8 1 0
+;f6 0 128 9 1 .4 0 2.2 .5 0 3.8 1 0	
 
 ;f6 0 128 -7 .03 128 .03; uniform initial velocity
-f6 0 128 -11 1 1.5 -.2 ;same GEN11 as centering force
+f6 0 128 -11 1 1.5 -.9 ;same GEN11 as centering force
 ;f6 0 128 10 
 ; Trajectories
 f7 0 128 -7 .01 128 128
@@ -300,36 +324,11 @@ f7 0 128 -7 .01 128 128
 ;====Initialize Instruments
 i1 0 [60*60*24*7]
 i2 0 [60*60*24*7]
-i3 0 [60*60*24*7]
+;i3 0 [60*60*24*7]
 i98 0 [60*60*24*7]
 i99 0 [60*60*24*7]
-i3 0 [60*60*24*7]
 i 98 0 [3600*24*7]
 i 99 0 [3600*24*7]
 e
 </CsScore>
 </CsoundSynthesizer>
-
-
-
-
-
-<bsbPresets>
-</bsbPresets>
-<bsbPanel>
- <label>Widgets</label>
- <objectName/>
- <x>100</x>
- <y>100</y>
- <width>320</width>
- <height>240</height>
- <visible>true</visible>
- <uuid/>
- <bgcolor mode="background">
-  <r>240</r>
-  <g>240</g>
-  <b>240</b>
- </bgcolor>
-</bsbPanel>
-<bsbPresets>
-</bsbPresets>
