@@ -1,43 +1,39 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class XylophoneBarChannelSenders : MonoBehaviour
 {
 
     private CsoundUnity csoundUnity;
     private Rigidbody rb;
-
-    private float objectMass;
-    private float outputMass;
-    private float objectMassMin;
-    private float objectMassMax;
+    
+    private Slider massSlider;
+    private float remappedMass;
+    private float minMass;
 
     void Start()
     {
         //find the parent CsoundUnity componant 
         csoundUnity = GameObject.Find("BARS").GetComponent<CsoundUnity>();
         rb = gameObject.GetComponent<Rigidbody>();
-        //mass and min 'masses'. from the smallest bar to the biggest one.
-        objectMassMin = GameObject.Find("Bar1").GetComponent<Rigidbody>().mass;
-        objectMassMax = GameObject.Find("Bar12").GetComponent<Rigidbody>().mass;
-        //get mass from rb
-        objectMass = rb.mass;
+        //find mass slider
+        minMass = rb.mass;
+        massSlider = GameObject.Find("Mass Slider").GetComponent<Slider>();
     }
 
-
-    private void OnCollisionEnter(Collision other)
+    void Update()
     {
-        BarMassToChannel(); 
+        remappedMass = MapValue(10, 150, 1, 9, massSlider.value);
+        rb.mass = minMass * (remappedMass); 
+        // .1 = .054 * 1.857, .027
+        //.054, .081, 
     }
 
-
-    //method to set the channel "mass" based on the mass of the rb that was collided
-    public void BarMassToChannel()
+    public float MapValue(float a0, float a1, float b0, float b1, float a)
     {
-        csoundUnity.SetChannel("mass", CsoundUnity.Remap(objectMass, objectMassMin, objectMassMax, 1.0f, 12.0f));
-        //Print the mass channel value
-        float channelMassValue =(float) csoundUnity.GetChannel("mass");
-    }
+        return b0 + (b1 - b0) * ((a-a0)/(a1-a0));
+    } 
 
 }

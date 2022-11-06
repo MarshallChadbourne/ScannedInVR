@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class DeleteObjectAfterSpawn : MonoBehaviour
 {
-    private float yBound = 5.0f;
-
+    
     void Start()
     {
         StartCoroutine(DeleteAfterOneSecond(gameObject));

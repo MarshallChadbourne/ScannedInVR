@@ -5,7 +5,7 @@ using System;
 
 public class SendScoreEvent : MonoBehaviour
 {
-    public CsoundUnity csoundUnity;
+    public CsoundUnity csoundUnity; 
     
     public float initYPos;
     public float initDisp;
@@ -25,8 +25,9 @@ public class SendScoreEvent : MonoBehaviour
         csoundUnity = GameObject.Find("BARS").GetComponent<CsoundUnity>();
         
         initYPos = gameObject.transform.position.y;
-
+        
     }
+
 
     public void SendScoreEventNow()
     {
@@ -56,4 +57,6 @@ public class SendScoreEvent : MonoBehaviour
     {
         return b0 + (b1 - b0) * ((a-a0)/(a1-a0));
     } 
+
+
 }

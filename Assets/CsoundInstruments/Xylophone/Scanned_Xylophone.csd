@@ -1,4 +1,4 @@
-<Cabbage>
+<Cabbage> bounds(0, 0, 0, 0)
 form caption("Xylophone") size(1200, 500), guiMode("queue") pluginId("def1")
 button bounds(30, 22, 80, 40) channel("trigger")
 button bounds(240, 22, 80, 40) channel("triggertwo")
@@ -8,13 +8,15 @@ hslider bounds(32, 142, 150, 50) channel("loudness") range(0, 80, 80, 1, 0.001)
 hslider bounds(32, 208, 150, 50) channel("pitch") range(0, 8, 6.3, 1, 0.01)
 
 ;===UNITY CHANNELS===;
-hslider bounds(212, 76, 150, 50) channel("mass") range(0, 12, 0, 1, 1) text("mass")
+hslider bounds(212, 76, 150, 50) channel("mass") range(10, 150, 25, 1, 1) text("mass")
 hslider bounds(214, 146, 150, 50) channel("displacement") range(0, 1, 0.001, 1, 0.001) text("dis")
 
 hslider bounds(736, 24, 150, 28) channel("value1") range(0.1, 10, 0.674, 1, 0.001) text("Value 1")
 hslider bounds(734, 54, 150, 30) channel("value2") range(0, 1000, 0, 1, 1) text("Value 2")
 hslider bounds(736, 86, 150, 31) channel("value3") range(0, 2, 0, 1, 0.01) text("Value 3")
 nslider bounds(220, 234, 100, 22) channel("barnum") range(1, 12, 0, 1, 1)
+;===OUTPUT CHANNELS===;
+nslider bounds(648, 192, 267, 78) channel("outlev1") range(0, 1, 0.0537111, 1, 0.001) 
 </Cabbage>
 <CsoundSynthesizer>s
 <CsOptions>
@@ -243,7 +245,7 @@ instr 2         ;SCANNED instrument
     
           ;init, irate, ifndisplace, ifnmass, ifnmatrix, ifncentr, ifndamp,     kmass,  kmtrxstiff, kcentr,      kdamp,       ileft,        iright,    kpos,      kdisplace,    ain,    idisp,  id 
         
-    scanu2 1,   irate,  6,              2,      3,          4,      5,          25,       20,       kcentr,       kdamp,           .2,            .7,      kpos,       kDisplace,    gaScanSend, 0,  2
+    scanu2 1,   irate,  6,              2,      3,          4,      5,          kMass,       20,       kcentr,       kdamp,           .2,            .7,      kpos,       kDisplace,    gaScanSend, 0,  2
     
     a1 scans (ampdbfs(p4)) * kenvm * kenvm2, cpspch(p5), 7, 2, 4
     a1 dcblock a1
@@ -258,12 +260,25 @@ instr 2         ;SCANNED instrument
     iWet = .5
     iDry = .5
     gaSendM = gaSendM + (a1 * iWet)
+    
+    krms            rms a1
+    if krms > 1.00 then
+        krms = 1.00
+    endif
+    
+    ;cabbageSetValue "vmeter123", portk(krms*10, .25), metro(10)
+    ;cabbageSetValue "outlev1", portk(krms*10, .21)
+    chnset          portk(krms*10, .21), "outlev1"
+    koutlev1    chnget "outlev1"
+    ;cabbageSetValue "outlev1", koutlev1
+    
     outs a1 * iDry, a1 * iDry
+    
     clear gaScanSend
 endin
 
 instr    98    ; spatialising short delays
-
+           
     iDelTimL    random    0.00001,i(gkStWidth)
     aDelSigL    delay    gaSendM, iDelTimL
     iDelTimR    random    0.00001,i(gkStWidth)
@@ -275,6 +290,7 @@ instr    98    ; spatialising short delays
     gaSendL    =    gaSendL + gaSendM + aDelSigL
     gaSendR    =    gaSendR + gaSendM + aDelSigR
             outs    aL*gkAmp, aR*gkAmp
+
             clear    gaSendM
 endin
 

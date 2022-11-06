@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class XylophoneParentChannelSender : MonoBehaviour
 {
@@ -13,6 +14,12 @@ public class XylophoneParentChannelSender : MonoBehaviour
 
     private float maxObjectDisplacement = 1.00f;
     private float maxChannelDisplacement = 1.00f;
+    [SerializeField]
+    private float averageDisplacement;
+
+    public float ampLevel;
+
+    public Slider massSlider;
 
     void Start()
     {
@@ -24,17 +31,18 @@ public class XylophoneParentChannelSender : MonoBehaviour
         }
     }
 
-
     void Update()
     {
         MapDisplacementToChannel();
+        MapSliderValues(massSlider.value);
+        ampLevel = (float) csoundUnity.GetChannel("outlev1");
     }
 
     //TODO map the averaged Y displacement into scanned synthesis model
 
     public void MapDisplacementToChannel()
     {
-        float averageDisplacement = ABSAverageYDisplacement();
+        averageDisplacement = ABSAverageYDisplacement();
         csoundUnity.SetChannel("displacement", CsoundUnity.Remap(averageDisplacement, 0, maxObjectDisplacement, 0, maxChannelDisplacement));
     }
 
@@ -46,7 +54,10 @@ public class XylophoneParentChannelSender : MonoBehaviour
         float summedDisplacement = 0.00f;
         for (int i = 0; i < numberOfBars; i++)
         {
-            singleDisplacement = Mathf.Abs(1 - bars[i].transform.position.y);
+            //absolute value 
+            //singleDisplacement = Mathf.Abs(1 - bars[i].transform.position.y);//
+            //relative value 
+            singleDisplacement = 1 - bars[i].transform.position.y;
             
             //sum displacments
             summedDisplacement += singleDisplacement;
@@ -56,4 +67,11 @@ public class XylophoneParentChannelSender : MonoBehaviour
 
         return averageDisplacement;
     }
+
+    public void MapSliderValues(float massValue)
+    {
+        
+        csoundUnity.SetChannel("mass", massValue);
+    }
+
 }

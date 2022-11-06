@@ -32,7 +32,7 @@ public class SendScoreEventOnCollisionEnter : MonoBehaviour
             {
                 if (gameObject.CompareTag(i.ToString()))
                 {
-                    noteValue = i;
+                    noteValue = 13 - i;
                 }
             }
             if(collision.gameObject.CompareTag("Hammer"))

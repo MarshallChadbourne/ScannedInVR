@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "1WMHHB428U2142",
         "name": "com.Marshall_Chadbourne.ScannedInUnity",
-        "processId": 9564,
+        "processId": 6287,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -22,470 +22,206 @@
         },
         {
             "deviceId": "1WMHHB428U2142",
-            "name": "com.Marshall_Chadbourne.ScannedInUnity",
-            "processId": 29596,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHHB428U2142",
-            "name": "com.Marshall_Chadbourne.ScannedInUnity",
-            "processId": 30265,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHHB428U2142",
-            "name": "com.Marshall_Chadbourne.ScannedInUnity",
-            "processId": 30540,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHHB428U2142",
-            "name": "com.Marshall_Chadbourne.ScannedInUnity",
-            "processId": 30949,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHHB428U2142",
-            "name": "com.Marshall_Chadbourne.ScannedInUnity",
-            "processId": 31234,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHHB428U2142",
-            "name": "com.Marshall_Chadbourne.ScannedInUnity",
-            "processId": 31607,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHHB428U2142",
-            "name": "com.Marshall_Chadbourne.ScannedInUnity",
-            "processId": 32341,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHHB428U2142",
-            "name": "com.Marshall_Chadbourne.ScannedInUnity",
-            "processId": 32624,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHHB428U2142",
-            "name": "com.Marshall_Chadbourne.ScannedInUnity",
-            "processId": 1006,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHHB428U2142",
-            "name": "com.Marshall_Chadbourne.ScannedInUnity",
-            "processId": 1482,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHHB428U2142",
-            "name": "com.Marshall_Chadbourne.ScannedInUnity",
-            "processId": 2636,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHHB428U2142",
-            "name": "com.Marshall_Chadbourne.ScannedInUnity",
-            "processId": 3226,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHHB428U2142",
-            "name": "com.Marshall_Chadbourne.ScannedInUnity",
-            "processId": 3947,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHHB428U2142",
-            "name": "com.Marshall_Chadbourne.ScannedInUnity",
-            "processId": 5416,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHHB428U2142",
-            "name": "com.Marshall_Chadbourne.ScannedInUnity",
-            "processId": 6326,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHHB428U2142",
-            "name": "com.Marshall_Chadbourne.ScannedInUnity",
-            "processId": 6805,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHHB428U2142",
-            "name": "com.Marshall_Chadbourne.ScannedInUnity",
-            "processId": 7266,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHHB428U2142",
-            "name": "com.Marshall_Chadbourne.ScannedInUnity",
-            "processId": 8243,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHHB428U2142",
-            "name": "com.Marshall_Chadbourne.ScannedInUnity",
-            "processId": 8666,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHHB428U2142",
-            "name": "com.Marshall_Chadbourne.ScannedInUnity",
-            "processId": 8974,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHHB428U2142",
-            "name": "com.Marshall_Chadbourne.ScannedInUnity",
-            "processId": 11048,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHHB428U2142",
-            "name": "com.Marshall_Chadbourne.ScannedInUnity",
-            "processId": 11909,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHHB428U2142",
-            "name": "com.Marshall_Chadbourne.ScannedInUnity",
-            "processId": 12283,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHHB428U2142",
-            "name": "com.Marshall_Chadbourne.ScannedInUnity",
-            "processId": 12605,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHHB428U2142",
-            "name": "com.Marshall_Chadbourne.ScannedInUnity",
-            "processId": 12968,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHHB428U2142",
-            "name": "com.Marshall_Chadbourne.ScannedInUnity",
-            "processId": 13894,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHHB428U2142",
-            "name": "com.Marshall_Chadbourne.ScannedInUnity",
-            "processId": 14168,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHHB428U2142",
-            "name": "com.Marshall_Chadbourne.ScannedInUnity",
-            "processId": 14825,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHHB428U2142",
-            "name": "com.Marshall_Chadbourne.ScannedInUnity",
-            "processId": 22216,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHHB428U2142",
-            "name": "com.Marshall_Chadbourne.ScannedInUnity",
-            "processId": 22667,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHHB428U2142",
-            "name": "com.Marshall_Chadbourne.ScannedInUnity",
-            "processId": 23092,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHHB428U2142",
-            "name": "com.Marshall_Chadbourne.ScannedInUnity",
-            "processId": 23445,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHHB428U2142",
-            "name": "com.Marshall_Chadbourne.ScannedInUnity",
-            "processId": 27821,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHHB428U2142",
-            "name": "com.Marshall_Chadbourne.ScannedInUnity",
-            "processId": 29074,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHHB428U2142",
-            "name": "com.Marshall_Chadbourne.ScannedInUnity",
-            "processId": 29350,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHHB428U2142",
-            "name": "com.Marshall_Chadbourne.ScannedInUnity",
-            "processId": 29768,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHHB428U2142",
-            "name": "com.Marshall_Chadbourne.ScannedInUnity",
-            "processId": 30120,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHHB428U2142",
-            "name": "com.Marshall_Chadbourne.ScannedInUnity",
-            "processId": 30562,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHHB428U2142",
-            "name": "com.Marshall_Chadbourne.ScannedInUnity",
-            "processId": 30991,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHHB428U2142",
-            "name": "com.Marshall_Chadbourne.ScannedInUnity",
-            "processId": 32539,
+            "name": "com.oculus.os.clearactivity",
+            "processId": 10210,
             "exited": false
         },
         {
             "deviceId": "1WMHHB428U2142",
             "name": "com.Marshall_Chadbourne.ScannedInUnity",
-            "processId": 923,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHHB428U2142",
-            "name": "com.Marshall_Chadbourne.ScannedInUnity",
-            "processId": 2001,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHHB428U2142",
-            "name": "com.Marshall_Chadbourne.ScannedInUnity",
-            "processId": 2600,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHHB428U2142",
-            "name": "com.Marshall_Chadbourne.ScannedInUnity",
-            "processId": 3129,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHHB428U2142",
-            "name": "com.Marshall_Chadbourne.ScannedInUnity",
-            "processId": 13899,
-            "exited": false
+            "processId": 15505,
+            "exited": true
         },
         {
             "deviceId": "1WMHHB428U2142",
             "name": "com.Marshall_Chadbourne.ScannedInUnity",
-            "processId": 14811,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHHB428U2142",
-            "name": "com.Marshall_Chadbourne.ScannedInUnity",
-            "processId": 15482,
-            "exited": false
+            "processId": 16153,
+            "exited": true
         },
         {
             "deviceId": "1WMHHB428U2142",
             "name": "com.Marshall_Chadbourne.ScannedInUnity",
-            "processId": 16122,
-            "exited": false
+            "processId": 17593,
+            "exited": true
         },
         {
             "deviceId": "1WMHHB428U2142",
             "name": "com.Marshall_Chadbourne.ScannedInUnity",
-            "processId": 16495,
-            "exited": false
+            "processId": 22802,
+            "exited": true
         },
         {
             "deviceId": "1WMHHB428U2142",
             "name": "com.Marshall_Chadbourne.ScannedInUnity",
-            "processId": 17336,
+            "processId": 26849,
             "exited": false
         },
         {
             "deviceId": "1WMHHB428U2142",
             "name": "com.Marshall_Chadbourne.ScannedInUnity",
-            "processId": 17806,
+            "processId": 12097,
             "exited": false
         },
         {
             "deviceId": "1WMHHB428U2142",
             "name": "com.Marshall_Chadbourne.ScannedInUnity",
-            "processId": 18430,
+            "processId": 13459,
             "exited": false
         },
         {
             "deviceId": "1WMHHB428U2142",
             "name": "com.Marshall_Chadbourne.ScannedInUnity",
-            "processId": 18933,
+            "processId": 20779,
             "exited": false
         },
         {
             "deviceId": "1WMHHB428U2142",
             "name": "com.Marshall_Chadbourne.ScannedInUnity",
-            "processId": 19328,
+            "processId": 22007,
             "exited": false
         },
         {
             "deviceId": "1WMHHB428U2142",
             "name": "com.Marshall_Chadbourne.ScannedInUnity",
-            "processId": 20136,
+            "processId": 22979,
             "exited": false
         },
         {
             "deviceId": "1WMHHB428U2142",
             "name": "com.Marshall_Chadbourne.ScannedInUnity",
-            "processId": 28662,
+            "processId": 24798,
             "exited": false
         },
         {
             "deviceId": "1WMHHB428U2142",
             "name": "com.Marshall_Chadbourne.ScannedInUnity",
-            "processId": 29309,
+            "processId": 25820,
             "exited": false
         },
         {
             "deviceId": "1WMHHB428U2142",
             "name": "com.Marshall_Chadbourne.ScannedInUnity",
-            "processId": 29794,
+            "processId": 26493,
             "exited": false
         },
         {
             "deviceId": "1WMHHB428U2142",
             "name": "com.Marshall_Chadbourne.ScannedInUnity",
-            "processId": 5585,
+            "processId": 27317,
             "exited": false
         },
         {
             "deviceId": "1WMHHB428U2142",
             "name": "com.Marshall_Chadbourne.ScannedInUnity",
-            "processId": 6268,
+            "processId": 27968,
             "exited": false
         },
         {
             "deviceId": "1WMHHB428U2142",
             "name": "com.Marshall_Chadbourne.ScannedInUnity",
-            "processId": 8318,
+            "processId": 31780,
             "exited": false
         },
         {
             "deviceId": "1WMHHB428U2142",
             "name": "com.Marshall_Chadbourne.ScannedInUnity",
-            "processId": 8714,
+            "processId": 32748,
             "exited": false
         },
         {
             "deviceId": "1WMHHB428U2142",
             "name": "com.Marshall_Chadbourne.ScannedInUnity",
-            "processId": 9509,
+            "processId": 1653,
             "exited": false
         },
         {
             "deviceId": "1WMHHB428U2142",
             "name": "com.Marshall_Chadbourne.ScannedInUnity",
-            "processId": 10345,
+            "processId": 4581,
             "exited": false
         },
         {
             "deviceId": "1WMHHB428U2142",
             "name": "com.Marshall_Chadbourne.ScannedInUnity",
-            "processId": 11182,
+            "processId": 5495,
             "exited": false
         },
         {
             "deviceId": "1WMHHB428U2142",
             "name": "com.Marshall_Chadbourne.ScannedInUnity",
-            "processId": 11787,
+            "processId": 10165,
             "exited": false
         },
         {
             "deviceId": "1WMHHB428U2142",
             "name": "com.Marshall_Chadbourne.ScannedInUnity",
-            "processId": 12858,
+            "processId": 11305,
             "exited": false
         },
         {
             "deviceId": "1WMHHB428U2142",
             "name": "com.Marshall_Chadbourne.ScannedInUnity",
-            "processId": 13833,
+            "processId": 22891,
             "exited": false
         },
         {
             "deviceId": "1WMHHB428U2142",
             "name": "com.Marshall_Chadbourne.ScannedInUnity",
-            "processId": 14747,
+            "processId": 23869,
             "exited": false
         },
         {
             "deviceId": "1WMHHB428U2142",
             "name": "com.Marshall_Chadbourne.ScannedInUnity",
-            "processId": 15739,
+            "processId": 24812,
             "exited": false
         },
         {
             "deviceId": "1WMHHB428U2142",
             "name": "com.Marshall_Chadbourne.ScannedInUnity",
-            "processId": 16464,
+            "processId": 25270,
             "exited": false
         },
         {
             "deviceId": "1WMHHB428U2142",
             "name": "com.Marshall_Chadbourne.ScannedInUnity",
-            "processId": 17234,
+            "processId": 25731,
             "exited": false
         },
         {
             "deviceId": "1WMHHB428U2142",
             "name": "com.Marshall_Chadbourne.ScannedInUnity",
-            "processId": 17945,
+            "processId": 26926,
             "exited": false
         },
         {
             "deviceId": "1WMHHB428U2142",
             "name": "com.Marshall_Chadbourne.ScannedInUnity",
-            "processId": 18940,
+            "processId": 16547,
             "exited": false
         },
         {
             "deviceId": "1WMHHB428U2142",
             "name": "com.Marshall_Chadbourne.ScannedInUnity",
-            "processId": 19490,
+            "processId": 17488,
             "exited": false
         },
         {
             "deviceId": "1WMHHB428U2142",
             "name": "com.Marshall_Chadbourne.ScannedInUnity",
-            "processId": 20053,
+            "processId": 18265,
             "exited": false
         },
         {
             "deviceId": "1WMHHB428U2142",
             "name": "com.Marshall_Chadbourne.ScannedInUnity",
-            "processId": 21575,
+            "processId": 4687,
             "exited": false
         },
         {
             "deviceId": "1WMHHB428U2142",
             "name": "com.Marshall_Chadbourne.ScannedInUnity",
-            "processId": 9564,
+            "processId": 6287,
             "exited": false
         }
     ],
