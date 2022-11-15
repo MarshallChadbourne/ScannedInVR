@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "1WMHHB428U2142",
         "name": "com.Marshall_Chadbourne.ScannedInUnity",
-        "processId": 6287,
+        "processId": 21634,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -222,6 +222,12 @@
             "deviceId": "1WMHHB428U2142",
             "name": "com.Marshall_Chadbourne.ScannedInUnity",
             "processId": 6287,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHHB428U2142",
+            "name": "com.Marshall_Chadbourne.ScannedInUnity",
+            "processId": 21634,
             "exited": false
         }
     ],

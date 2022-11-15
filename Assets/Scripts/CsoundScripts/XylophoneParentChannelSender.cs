@@ -20,6 +20,8 @@ public class XylophoneParentChannelSender : MonoBehaviour
     public float ampLevel;
 
     public Slider massSlider;
+    public Slider dampSlider;
+    public Slider stiffSlider;
 
     void Start()
     {
@@ -34,11 +36,11 @@ public class XylophoneParentChannelSender : MonoBehaviour
     void Update()
     {
         MapDisplacementToChannel();
-        MapSliderValues(massSlider.value);
+        MapSliderValues(massSlider.value, stiffSlider.value, dampSlider.value);
         ampLevel = (float) csoundUnity.GetChannel("outlev1");
     }
 
-    //TODO map the averaged Y displacement into scanned synthesis model
+    // map the averaged Y displacement into scanned synthesis model
 
     public void MapDisplacementToChannel()
     {
@@ -68,9 +70,10 @@ public class XylophoneParentChannelSender : MonoBehaviour
         return averageDisplacement;
     }
 
-    public void MapSliderValues(float massValue)
+    public void MapSliderValues(float massValue, float stiffValue, float dampValue)
     {
-        
+        csoundUnity.SetChannel("damp", dampValue);
+        csoundUnity.SetChannel("stiff", stiffValue);
         csoundUnity.SetChannel("mass", massValue);
     }
 

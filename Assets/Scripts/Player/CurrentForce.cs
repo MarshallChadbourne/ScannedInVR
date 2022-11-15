@@ -15,6 +15,6 @@ public class CurrentForce : MonoBehaviour
 
     void Update()
     {
-        currentForce = configJoint.currentForce.magnitude;
+        currentForce = configJoint.targetVelocity.magnitude;
     }
 }

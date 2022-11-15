@@ -16,10 +16,4 @@ public class SliderScript : MonoBehaviour
             _sliderText.text = v.ToString();
         });
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
